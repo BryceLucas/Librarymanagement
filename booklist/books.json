@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "title": "A Game of Thrones Song of Ice and Fire",
+    "author": "George R.R. Martin",
+    "isbn": "978-0553593716",
+    "availability": "Available",
+    "waiting_list": ["User1", "User2"],
+    "image": "images/Gameofthrones.jpg"
+  },
+  {
+    "id": 2,
+    "title": "James",
+    "author": "Percival Everett",
+    "isbn": "978-1644451234",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/James.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Intermezzo",
+    "author": "Sally Rooney",
+    "isbn": "978-0571365400",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Intermezzo.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Women",
+    "author": "Kristin Hannah",
+    "isbn": "978-1250178619",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Thewomen.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Now or Never",
+    "author": "Janet Evanovich",
+    "isbn": "978-1982154837",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Nowornever.jpg"
+  },
+  {
+    "id": 6,
+    "title": "We Who Wrestle with God",
+    "author": "Jordan B. Peterson",
+    "isbn": "978-0593542538",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Wewhowrestlewithgod.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Fourth Wing",
+    "author": "Rebecca Yarros",
+    "isbn": "978-1649374040",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Fourthwing.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Demon Copperhead",
+    "author": "Barbara Kingsolver",
+    "isbn": "978-0063251923",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Demoncopperhead.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Counting Miracles",
+    "author": "Nicholas Sparks",
+    "isbn": "978-0593449554",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Countingmiracles.jpg"
+  },
+  {
+    "id": 10,
+    "title": "The Book of Bill",
+    "author": "Alex Hirsch",
+    "isbn": "978-1368074829",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Thebookofbill.jpg"
+  },
+  {
+    "id": 11,
+    "title": "The Mirror: The Lost Bride Trilogy, Book 2",
+    "author": "Nora Roberts",
+    "isbn": "978-1250272607",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Themirrorbook2.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Fifty Shades of Grey",
+    "author": "E.L. James",
+    "isbn": "978-0345803481",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Fiftyshadesofgrey.jpg"
+  },
+  {
+    "id": 13,
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "isbn": "978-0439023528",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Thehungergames.jpg"
+  },
+  {
+    "id": 14,
+    "title": "The Help",
+    "author": "Kathryn Stockett",
+    "isbn": "978-0425232200",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Thehelp.jpg"
+  },
+  {
+    "id": 15,
+    "title": "The Girl on the Train",
+    "author": "Paula Hawkins",
+    "isbn": "978-1594634024",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Thegirlonthetrain.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Gone Girl",
+    "author": "Gillian Flynn",
+    "isbn": "978-0307588371",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Gonegirl.jpg"
+  },
+  {
+    "id": 17,
+    "title": "The Fault in Our Stars",
+    "author": "John Green",
+    "isbn": "978-0525478812",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Thefaultinourstars.jpg"
+  },
+  {
+    "id": 18,
+    "title": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "isbn": "978-0307454546",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Thegirlwiththedragontattoo.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Divergent",
+    "author": "Veronica Roth",
+    "isbn": "978-0062024039",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Divergent.jpg"
+  },
+  {
+    "id": 20,
+    "title": "The Goldfinch",
+    "author": "Donna Tartt",
+    "isbn": "978-0316055437",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Thegoldfinch.jpg"
+  },
+  {
+    "id": 21,
+    "title": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "isbn": "978-0307744432",
+    "availability": "Available",
+    "waiting_list": [],
+    "image": "images/Thenightcircus.jpg"
+  }
+]
