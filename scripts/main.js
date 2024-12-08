@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const target = event.target;
 
     if (target.classList.contains("borrow-btn")) {
-      const bookId = target.dataset.bookId;
+      const { bookId } = target.dataset; // Destructure bookId from dataset
       const userName = prompt("Enter your name to borrow this book:");
       if (userName) {
         borrowBook(bookId, userName);
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (target.classList.contains("return-btn")) {
-      const bookId = target.dataset.bookId;
+      const { bookId } = target.dataset; // Destructure bookId from dataset
       returnBook(bookId);
       displayBooks(books, bookListElement);
     }
@@ -59,13 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (book.availability === "Available") {
       book.availability = "Borrowed";
       alert(`${userName} successfully borrowed ${book.title}.`);
+    } else if (!book.waiting_list.includes(userName)) {
+      book.waiting_list.push(userName);
+      alert(`${userName} has been added to the waitlist for ${book.title}.`);
     } else {
-      if (!book.waiting_list.includes(userName)) {
-        book.waiting_list.push(userName);
-        alert(`${userName} has been added to the waitlist for ${book.title}.`);
-      } else {
-        alert(`${userName} is already in the waitlist for ${book.title}.`);
-      }
+      alert(`${userName} is already in the waitlist for ${book.title}.`);
     }
   }
 
@@ -95,25 +93,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Book HTML structure
       listItem.innerHTML = `
-                <img src="${book.image}" alt="${book.title}" class="book-cover">
-                <div class="book-details">
-                    <h3>${book.title}</h3>
-                    <p><strong>Author:</strong> ${book.author}</p>
-                    <p><strong>ISBN:</strong> ${book.isbn}</p>
-                    <p><strong>Availability:</strong> ${book.availability}</p>
-                    <p><strong>Waitlist:</strong> ${
-                      book.waiting_list.length > 0
-                        ? book.waiting_list.join(", ")
-                        : "None"
-                    }</p>
-                    <button class="borrow-btn" data-book-id="${
-                      book.id
-                    }">Borrow</button>
-                    <button class="return-btn" data-book-id="${
-                      book.id
-                    }">Return</button>
-                </div>
-            `;
+        <img src="${book.image}" alt="${book.title}" class="book-cover">
+        <div class="book-details">
+            <h3>${book.title}</h3>
+            <p><strong>Author:</strong> ${book.author}</p>
+            <p><strong>ISBN:</strong> ${book.isbn}</p>
+            <p><strong>Availability:</strong> ${book.availability}</p>
+            <p><strong>Waitlist:</strong> ${
+              book.waiting_list.length > 0
+                ? book.waiting_list.join(", ")
+                : "None"
+            }</p>
+            <button class="borrow-btn" data-book-id="${book.id}">Borrow</button>
+            <button class="return-btn" data-book-id="${book.id}">Return</button>
+        </div>
+      `;
 
       // Append to the container
       container.appendChild(listItem);
