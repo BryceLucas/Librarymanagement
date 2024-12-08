@@ -5,7 +5,7 @@ const searchBox = document.getElementById("search-box");
 let books = [];
 
   // Fetch books from books.json
-fetch("assets/booklist/books.json")
+fetch("booklist/books.json")
     .then((response) => {
     if (!response.ok) {
         throw new Error("Failed to fetch books.json");
