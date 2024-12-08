@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Management System</title>
+    <!-- Link to external stylesheet for consistent styling across the project -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <h1>Welcome to the Library Management System</h1>
+        <!-- Navigation Menu -->
         <nav>
             <ul>
+                <!-- Link to the home page -->
                 <li><a href="index.html">Home</a></li>
+                <!-- Link to the "How It Works" page -->
                 <li><a href="howitworks.html">How It Works</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Section for the book list -->
     <section id="booklist">
         <h2>Available Books</h2>
+        <!-- Search input field for filtering books -->
         <input type="text" id="search-box" placeholder="Search by title, author, or ISBN...">
+        <!-- Unordered list where book items will be dynamically inserted by JavaScript -->
         <ul id="book-list"></ul>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Library Management System. All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript file responsible for dynamic functionality -->
     <script src="scripts/main.js"></script>
 </body>
 </html>
