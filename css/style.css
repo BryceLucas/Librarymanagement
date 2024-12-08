@@ -87,6 +87,6 @@ footer {
     border-left: 5px solid #4CAF50;
 }
 
-.book-checked-out {
-    border-left: 5px solid #f44336;
+.book-borrowed {
+    border-left: 5px solid #F44336;
 }

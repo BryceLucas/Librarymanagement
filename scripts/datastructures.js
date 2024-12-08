@@ -1,4 +1,4 @@
-// Linked List Implementation
+// Node for Linked List
 class Node {
   constructor(book) {
     this.book = book;
@@ -6,6 +6,7 @@ class Node {
   }
 }
 
+// Linked List Implementation
 class LinkedList {
   constructor() {
     this.head = null;
@@ -112,7 +113,52 @@ class Queue {
   isEmpty() {
     return this.items.length === 0;
   }
+
+  size() {
+    return this.items.length;
+  }
+}
+
+// Book with Waitlist Implementation
+class BookWithWaitlist {
+  constructor(title, isbn, author) {
+    this.title = title;
+    this.isbn = isbn;
+    this.author = author;
+    this.availability = "Available";
+    this.waitlist = new Queue();
+  }
+
+  borrowBook(user) {
+    if (this.availability === "Available") {
+      this.availability = "Borrowed";
+      console.log(`${user} successfully borrowed ${this.title}.`);
+    } else {
+      this.waitlist.enqueue(user);
+      console.log(`${user} has been added to the waitlist for ${this.title}.`);
+    }
+  }
+
+  returnBook() {
+    if (!this.waitlist.isEmpty()) {
+      const nextUser = this.waitlist.dequeue();
+      console.log(`${nextUser} is now borrowing ${this.title}.`);
+    } else {
+      this.availability = "Available";
+      console.log(`${this.title} is now available.`);
+    }
+  }
+
+  showWaitlist() {
+    if (this.waitlist.isEmpty()) {
+      console.log(`No users are waiting for ${this.title}.`);
+    } else {
+      console.log(
+        `Waitlist for ${this.title}: ${this.waitlist.items.join(", ")}`
+      );
+    }
+  }
 }
 
 // Export Classes
-export { LinkedList, HashTable, Queue };
+export { LinkedList, HashTable, Queue, BookWithWaitlist };
