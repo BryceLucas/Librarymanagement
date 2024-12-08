@@ -78,13 +78,15 @@ section {
 
 /* Search Box */
 #search-box {
-  width: 100%; /* Make the input span the full width of its container */
+  width: 100%; /* Ensure the input spans the full width of its container */
+  max-width: 100%; /* Prevent it from exceeding the container's width */
   padding: 0.8em; /* Add padding for a larger, more clickable input */
   margin-bottom: 1.5em; /* Add some spacing below the input */
-  font-size: 1.2em; /* Increase font size */
+  font-size: 1.2em; /* Increase font size for better readability */
   border: 1px solid #ccc; /* Add a border for visibility */
   border-radius: 5px; /* Rounded corners for the input */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
 /* Book Cover */
