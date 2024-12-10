@@ -187,5 +187,68 @@
     "availability": "Available",
     "waiting_list": [],
     "image": "images/Thenightcircus.jpg"
-  }
+  },
+  {
+  "id": 22,
+  "title": "Twilight",
+  "author": "Stephenie Meyer",
+  "isbn": "978-0316015844",
+  "availability": "Available",
+  "waiting_list": [],
+  "image": "images/Twilight.jpg"
+},
+{
+  "id": 23,
+  "title": "The Life of Pi",
+  "author": "Yann Martel",
+  "isbn": "978-0156027328",
+  "availability": "Available",
+  "waiting_list": [],
+  "image": "images/Thelifeofpi.jpg"
+},
+{
+  "id": 24,
+  "title": "The Road",
+  "author": "Cormac McCarthy",
+  "isbn": "978-0307387899",
+  "availability": "Available",
+  "waiting_list": [],
+  "image": "images/Theroad.jpg"
+},
+{
+  "id": 25,
+  "title": "The Lovely Bones",
+  "author": "Alice Sebold",
+  "isbn": "978-0316168816",
+  "availability": "Available",
+  "waiting_list": [],
+  "image": "images/Thelovelybones.jpg"
+},
+{
+  "id": 26,
+  "title": "The Kite Runner",
+  "author": "Khaled Hosseini",
+  "isbn": "978-1594631931",
+  "availability": "Available",
+  "waiting_list": [],
+  "image": "images/Thekiterunner.jpg"
+},
+{
+  "id": 27,
+  "title": "The Da Vinci Code",
+  "author": "Dan Brown",
+  "isbn": "978-0385504201",
+  "availability": "Available",
+  "waiting_list": [],
+  "image": "images/Thedavincicode.jpg"
+},
+{
+  "id": 28,
+  "title": "Harry Potter and the Philosopher's Stone",
+  "author": "J.K. Rowling",
+  "isbn": "978-0747532699",
+  "availability": "Available",
+  "waiting_list": [],
+  "image": "images/Harrypotterphilosopher.jpg"
+}
 ]
