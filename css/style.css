@@ -34,7 +34,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #d4af37; /* Gold color */
+  color: white; /* Gold color */
   text-decoration: none;
   font-size: 1.2em;
   padding: 10px 15px;
